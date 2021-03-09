@@ -1,0 +1,58 @@
+Create class Contact using following fields along with getters and setters
+	contactID
+	ContactName
+	Email Address
+	List<String> contactNumber
+
+Create ContactService class along with following methods
+	1.Add contacts :- void addContact(Contact contact,List<Contact> contacts)
+	2.Void Remove contact(Contact contact, List<contact> contacts) throws ContactNotFoundException
+	3.Contact searchContactByName(String name, List<Contact> contact) throws ContactNotFoundException
+	4.Search should be able to find the contacts based on the partial input
+		For example contact No is -8977448730
+		Then it should be able to find contacts based on any of the i/p provided as mentioned below:-
+		a)74
+		b)448
+		c)8730
+All contacts present these values should be added in searched list
+List<Contact> SearchContactByNumber(String number, List<Contact> contact) throws ContactNotFoundException
+
+5.addContactNumber(int contactId, String contactNo, List<contact> contacts)
+Implement method to add provided contactNo to the existing list of contact numbers of the specified contact Id. Update the appropriate contact object.
+
+6.void sortContactsByName(List<Contact> contacts)
+
+7.void readContactsFromFile(List<Contact> contacts, String fileNAme)
+
+8.void serializeContactDetails(List<Contacts> contacts , String filename)
+
+9.List<Contact> deserializeContact(String filename)
+
+10.Set<Contact> populateContactFromDb()
+
+11.Boolean addContacts(List<Contacts> existingContact,Set<Contact> newContacts)
+
+Create following file and database 
+Create a new file Contact.txt with following contact details 
+1,Rohan,rohan@gmail.com,1234565
+2,Deepa,deep@rediffmail.com,234234,3434,234234
+3,Radha,neha@gmail.com
+
+
+Create database contactdb;
+Use database contactdb;
+Create table contact_tbl (
+contactId  int primary key,
+contactName varchar(30),
+contactEmail varchar(40),
+contactList varchar(100));
+
+insert into contact_tbl values
+(100,’Geeta’,’geet@gamil.com’,’23434,3445,34345’),
+(101,’Radha’,’rad@rediffmail.com’,null),
+(102,’Geeta’,’geeta@gmail.com’,’345345’);
+
+
+
+
+

@@ -1,0 +1,12 @@
+Create database contactdb;
+Use database contactdb;
+Create table contact_tbl (
+contactId  int primary key,
+contactName varchar(30),
+contactEmail varchar(40),
+contactList varchar(100));
+
+insert into contact_tbl values
+(100,'Geeta','geet@gamil.com','23434,3445,34345'),
+(101,'Radha','rad@rediffmail.com',null),
+(102,'Geeta','geeta@gmail.com','345345');
